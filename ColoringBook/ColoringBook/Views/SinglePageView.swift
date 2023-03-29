@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SinglePageView: View {
+
     var body: some View {
         VStack {
             Image(systemName: "sun.dust")
@@ -15,9 +16,9 @@ struct SinglePageView: View {
                 .aspectRatio(contentMode: .fit)
                 .padding(.top)
             Spacer()
-            Grid {
-                
-            }
+            Divider()
+            Text("Put color grid here")
+                .padding()
         }
     }
 }
@@ -25,5 +26,6 @@ struct SinglePageView: View {
 struct SinglePageView_Previews: PreviewProvider {
     static var previews: some View {
         SinglePageView()
+        
     }
 }
